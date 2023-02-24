@@ -1,32 +1,32 @@
 @font-face { 
   font-family: NanumSquareR_capture;
-  src: url(../web_font/NanumSquareR_capture/NanumSquareR_capture.eot); /* IE 6 ~ 8, IE 호환성 보기 */
-  src: url('../web_font/NanumSquareR_capture/NanumSquareR_capture.eot?#iefix') format('embedded-opentype');
+  src: url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/nanumsquarer-capture.eot); /* IE 6 ~ 8, IE 호환성 보기 */
+  src: url('https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/nanumsquarer-capture.eot?#iefix') format('embedded-opentype');
   src: local(☺),
-       url(../web_font/NanumSquareR_capture/NanumSquareR_capture.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
-       url(../web_font/NanumSquareR_capture/NanumSquareR_capture.woff) format('woff'), /* IE 9+, 모던 브라우저 */
-       url(../web_font/NanumSquareR_capture/NanumSquareR_capture.ttf) format('truetype');
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/nanumsquarer-capture.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/nanumsquarer-capture.woff) format('woff'), /* IE 9+, 모던 브라우저 */
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/nanumsquarer-capture.ttf) format('truetype');
 }
 
 @font-face { 
   font-family: bmjua_new;         /* 배달의민족 주아(상업무료) */
-  src: url(../web_font/bmjua_new/bmjua_new.eot); /* IE 6 ~ 8, IE 호환성 보기 */
-  src: url('../web_font/bmjua_new/bmjua_new.eot?#iefix') format('embedded-opentype');
+  src: url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/bmjua_new.eot); /* IE 6 ~ 8, IE 호환성 보기 */
+  src: url('https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/bmjua_new.eot?#iefix') format('embedded-opentype');
   src: local(☺),
-       url(../web_font/bmjua_new/bmjua_new.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
-       url(../web_font/bmjua_new/bmjua_new.woff) format('woff'), /* IE 9+, 모던 브라우저 */
-       url(../web_font/bmjua_new/bmjua_new.ttf) format('truetype');
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/bmjua_new.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/bmjua_new.woff) format('woff'), /* IE 9+, 모던 브라우저 */
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/bmjua_new.ttf) format('truetype');
   font-weight: lighter;
 }
 
 @font-face { 
   font-family: Nanum_GimYuICe;
-  src: url(../web_font/Nanum_GimYuICe/Nanum_GimYuICe.eot); /* IE 6 ~ 8, IE 호환성 보기 */
-  src: url('../web_font/Nanum_GimYuICe/Nanum_GimYuICe.eot?#iefix') format('embedded-opentype');
+  src: url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/nanum-gimyuice.eot); /* IE 6 ~ 8, IE 호환성 보기 */
+  src: url('https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/nanum-gimyuice.eot?#iefix') format('embedded-opentype');
   src: local(☺),
-       url(../web_font/Nanum_GimYuICe/Nanum_GimYuICe.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
-       url(../web_font/Nanum_GimYuICe/Nanum_GimYuICe.woff) format('woff'), /* IE 9+, 모던 브라우저 */
-       url(../web_font/Nanum_GimYuICe/Nanum_GimYuICe.TTF) format('truetype');
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/nanum-gimyuice.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/nanum-gimyuice.woff) format('woff'), /* IE 9+, 모던 브라우저 */
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/capture/nanum-gimyuice.TTF) format('truetype');
   font-weight: lighter;
 }
 
