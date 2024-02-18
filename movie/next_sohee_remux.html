@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+  <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+  defer='defer'
+  src='https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js'
+  integrity='sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm'
+  crossorigin='anonymous'>
+</script>
+<script>
+  (function() {
+    var css = document.createElement('link');
+    css.href = 'https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/bootstrap-5.3.1-dist/css/bootstrap.min.css';
+    css.rel = 'stylesheet';
+    css.type = 'text/css';
+    document.getElementsByTagName('head')[0].appendChild(css);
+  })();
+</script>
+<link rel="icon" href="data:,">
+<title>Buy me a coffee</title>
+<style>
+@font-face { 
+  font-family:uto-flower;
+  src: url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/button/uto-flower.eot); /* IE 6 ~ 8, IE 호환성 보기 */
+  src: url('https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/button/uto-flower.eot?#iefix') format('embedded-opentype');
+  src: local(☺),
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/button/uto-flower.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/button/uto-flower.woff) format('woff'), /* IE 9+, 모던 브라우저 */
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/button/uto-flower.ttf) format('truetype');
+  font-weight: 400;
+}
+@font-face { 
+  font-family: NanumSquareR_button;
+  src: url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/button/nanumsquarer-button_new2.eot); /* IE 6 ~ 8, IE 호환성 보기 */
+  src: url('https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/button/nanumsquarer-button_new2.eot?#iefix') format('embedded-opentype');
+  src: local(☺),
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/button/nanumsquarer-button_new2.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/button/nanumsquarer-button_new2.woff) format('woff'), /* IE 9+, 모던 브라우저 */
+       url(https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/button/nanumsquarer-button_new2.ttf) format('truetype');
+  font-weight: 400;
+}
+a:visited { color: #5cb85c; }
+
+.utoflower {
+  font-family: uto-flower !important;
+  visibility: hidden;
+}
+.fonts_loaded .utoflower{
+  visibility: visible;
+  font-size:24px;
+  text-decoration:none;
+}
+
+.nanumsquare {
+  font-family: NanumSquareR_button !important;
+  visibility: hidden;
+}
+.fonts_loaded .nanumsquare {
+  visibility: visible;
+  font-size:16px;
+  text-decoration:none;
+}
+.button-margin {
+  margin: 2px;
+}
+.modal-content{
+  border-top:#dee2e6 2px solid !important;
+}
+.tooltip-inner {
+  white-space: pre-wrap;
+}
+.sfw600 {
+  font-weight:600;
+}
+.toss-span {
+  font-weight:600;font-size:17px;display: flex !important;align-items: center !important;margin-top: -2px !important;
+}
+.donate-span {
+  font-weight:600;font-size:17px !important;
+}
+</style>
+
+  <!-- 본문 링크를 새창으로 열도록 하는 스크립트 -->
+<script>
+function popupCenter(href, w, h) {
+  var xPos = (document.body.offsetWidth/2) - (w/2); // 가운데 정렬
+  xPos += window.screenLeft; // 듀얼 모니터일 때
+  var yPos = (document.body.offsetHeight/2) - (h/2);
+
+  window.open(href, "pop_name", "width="+w+", height="+h+", left="+xPos+", top="+yPos+", menubar=yes, status=yes, titlebar=yes, resizable=yes, location=no, scrollbars=yes");
+}
+</script>
+</head>
+<body style="margin-top:5px;text-align:center;">
+<!-- 
+<button type="button" style="margin-top: -22px;margin-right: 10px;height: 50px;" class="btn btn-warning nanumsquare" id="tt" data-bs-toggle="tooltip" data-bs-placement="bottom" title="투네이션 후원페이지로 이동합니다" onclick="window.open('https://toon.at/donate/637653527541097733')" /><span style="font-weight:600;font-size:18px;">투네이션 후원</span></button> -->
+<!-- Button trigger modal -->
+<div style="display:inline-block;" id="tt" data-bs-toggle="tooltip" data-bs-placement="bottom" title="네이버 아이디만 있으면&#10;간편하게 후원이 가능해요~" data-bs-trigger="hover">
+<button type="button" style="margin-top: -22px;margin-right: 5px;height: 50px;" class="btn btn-warning nanumsquare" data-bs-toggle="modal" data-bs-target="#myModal">
+<span style="font-weight:600;font-size:17px;display: flex !important;align-items: center !important;margin-top: 2px !important;">네이버 포인트 후원</span>
+</button>
+</div>
+<!-- Modal -->
+<div class="modal" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display:none;">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header mx-1 my-1 px-1 py-1">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" style="margin: 0 auto;"><span class="sfw600">후원해 주셔서 감사합니다💗</span></h1>
+         <button type="button" class="btn-close position-absolute top-1 start-0 mx-1 my-1 px-1 py-1" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body mx-0 my-0 px-0 py-0">
+        <span style="display: inline-block; text-align: left;">
+        <br>1. 네이버에 로그인 후 <a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://section.blog.naver.com/connect/PopConnectBuddyAddForm.nhn?isHttpsRedirect=true&blogId=z7m5a" target="_blank"><b>네이버 블로그 이웃추가</b></a> 페이지로 이동해 주세요.
+        <br>2. <b>'확인'</b>버튼을 클릭해서 블로그 이웃으로 추가하고 창을 닫습니다.
+        <br>3. <a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://campaign.naver.com/event/pointgift_howto2" target="_blank"><b>네이버 포인트 선물</b></a> 페이지로 이동해 주세요.
+        <br>4. 하단에 <b>'내 포인트 선물하러가기'</b> 버튼을 클릭하여 새 창을 엽니다.
+        <br>5. <b>'받는사람'</b>을 클릭->블로그 친구->블로그 이웃 순서로 진행합니다
+        <br>6. 상단 <b>'블로그명 검색'</b>에 <b>'또라에몽900'</b>로 검색 및 선택 후 하단에 다음 버튼을 클릭합니다
+        <br>7. 보내고 싶으신 포인트를 입력 후 <b>'선물하기'</b>를 누르면 선물이 완료됩니다
+        <br><br>주의 사항) 포인트 선물 후원은 환불이 불가능합니다 신중하게 해주세요!
+        <br>- 후원 관련 문의는 admin@eriri.me 로 메일 주세요! -
+        <br>위 링크로 이웃 추가가 안될 경우 제 <a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://blog.naver.com/z7m5a" target="_blank"><b>블로그</b></a>에서 직접 이웃 추가해주세요~!
+        </span>
+      </div>
+        <button type="button" class="btn btn-secondary mx-0 fs-5" data-bs-dismiss="modal"><span style="font-weight:600;">창 닫기</span></button>
+    </div>
+  </div>
+</div>
+<style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 10px 7px 10px !important;line-height: 35px !important;height:51px !important;text-decoration: none !important;display:inline-flex !important;color:#FFFFFF !important;background-color:#FF813F !important;border-radius: 8px !important;border: 1px solid transparent !important;font-size: 24px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#FFFFFF !important;}</style><a class="bmc-button utoflower" target="_blank" href="https://www.buymeacoffee.com/eriri" id="tt" data-bs-toggle="tooltip" data-bs-placement="bottom" title="커피 한 잔으로 판매자를&#10;응원해 주세요♥" data-bs-trigger="hover"><img src="https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/button/bmc-new-btn-logo.svg" alt=""><span style="margin-left:5px;font-size:26px !important;display: flex !important;align-items: center !important;margin-top: 5px !important;">커피 한잔 후원♥</span></a>
+<div style="display:inline-block;" id="tt" data-bs-toggle="tooltip" data-bs-placement="bottom" title="토스계좌 (수수료가 없는&#10;후원입니다♡)" data-bs-trigger="hover">
+<button type="button" style="margin-top: -22px;margin-left: 5px;height: 50px;line-height: 20px;text-align: left;" class="btn btn-warning nanumsquare" data-bs-placement="bottom" data-bs-toggle="modal" data-bs-target="#myModal2" /><span class="toss-span">토스계좌<br>투네이션<span>&nbsp;&nbsp;후원</span></span></button></div>
+<!-- Modal -->
+<div class="modal" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display:none;">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header mx-1 my-1 px-1 py-1">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" style="margin: 0 auto;"><span class="sfw600">후원해 주셔서 감사합니다💗</span></h1>
+         <button type="button" class="btn-close position-absolute top-1 start-0 mx-1 my-1 px-1 py-1" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body mx-0 my-0 px-0 py-0">
+        <span style="display: inline-block; text-align: center;">
+        <br><a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://toss.me/eriri" target="_blank"><span style="font-weight:600;font-size:25px;">토스계좌 후원</span></a>
+        <br>
+        <br><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://toon.at/donate/637653527541097733" target="_blank"><span style="font-weight:600;font-size:25px;">투네이션 후원</span></a>
+        <br><br><br><br>주의 사항) 토스계좌 및 투네이션 후원은 환불이 불가능합니다 신중하게 해주세요!
+        <br>- 후원 관련 문의는 admin@eriri.me 로 메일 주세요! -
+        </span>
+      </div>
+        <button type="button" class="btn btn-secondary mx-0 fs-5" data-bs-dismiss="modal"><span style="font-weight:600;">창 닫기</span></button>
+    </div>
+  </div>
+</div>
+<div style="height: 25px;"><span class="donate-span nanumsquare">여러분의 후원 덕분에 저녁이 있는 삶을 꿈꿔봅니다 항상 감사합니다💗</span></div>
+<div style="height: 25px;"></div>
+<img src="https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/movie/remux_v3.png">
+<div style="height: 5px;"></div>
+<a class="btn btn-outline-danger nanumsquare button-margin" role="button" aria-pressed="true" style="font-size:16px;" onclick="popupCenter('https://eriri.me/g5/bbs/board.php?bo_table=md5&wr_id=261',800,1920);">
+⭐<span style="font-weight:600;">다운완료 후 오류검사</span>⭐
+    </a>
+<button type="button" style="cursor:pointer;font-weight:600;" class="btn btn-outline-success nanumsquare" onclick="location.href='./next_sohee_remux.zip'">스크린샷 다운로드</button>
+<!--라이트박스를 위한 스크립트-->
+    <!--<script>
+function del_lighttt(){
+    var s=document.getElementsByTagName("span")
+    for (var i = 0; i < s.length; i++) {
+        if(s[i].getAttribute("data-lightbox")=="lightbox"){
+            s[i].outerHTML=s[i].outerHTML.split('data-lightbox="lightbox"').join("");
+        }
+    }
+    window.removeEventListener('DOMContentLoaded',del_lighttt);
+}
+window.addEventListener('DOMContentLoaded',del_lighttt);
+    </script>-->
+<!--익스플로러에서 buymeacoffee 버튼 표시를 위한 스크립트 첫번째-->
+    <!--<script language="JavaScript">
+(function requestAnimationFrame_polyfill(){
+    var lastTime = 0;
+    var vendors = ['webkit', 'moz','ms','o'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+        window.cancelAnimationFrame =
+          window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
+    }
+ 
+    if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+              timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+ 
+    if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+}())-->
+</script>
+<script src="https://cdn.jsdelivr.net/gh/anisphia/personal-cdn@0.0.1/button/fontfaceobserver.js"></script>
+<script>
+    var font = new FontFaceObserver('uto-flower','NanumSquareR_button', {});
+
+    font.load().then(function () {
+        document.documentElement.className += " fonts_loaded";
+        console.log('Font is available');
+    }, function () {
+        console.log('Font is not available');
+    });
+  </script>
+<script type="text/javascript">
+window.addEventListener('load', function(){
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+})
+</script>
+</body>
+</html>
